@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button:hover {
+            /* background-color:= pseudoelemento */
+            background-color: brown;
+        }
+
+        li:first-child {
+            color: green;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+        li:nth-child(3) {
+            color: royalblue;
+            /*serve para selecionar determinado elemento atraves da posição*/
+
+        }
+
+        li p:first-child i {
+            background-color: yellow;
+        }
+        input[type="password"]{color: blue;
+
+        }
+        input[type="submit"]{
+            border-radius: 5px; color: royalblue; background-color: lightgrey
+            ;
+        }
+        /*a função active deixa o botão de outra cor qundo clicar , mas pra isso deve criar outro input[type="submti"] com a cor desejada*/
+        input[type="submit"]:active{
+            background-color: gray; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <button>Clique aqui</button>
+    <br><br><br>
+    <button>Clique aqui</button>
+    <ul id="lista">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <br><br>
+    <div>
+        <p>Lorem ipsum <i> dolor sit amet consectetur adipisicing elit. Quo quisquam blanditiis eum expedita excepturi
+                repellat illo, eveniet veniam? Aspernatur numquam </i>non sed quia vero. Optio iusto sed dolorum culpa
+            excepturi?</p>
+        <p>Lorem ipsum dolor <i> sit amet consectetur, adipisicing elit. Sit, sed tempora asperiores cupiditate commodi
+                at, veritatis quas maiores sunt cum magnam exercitationem doloribus rem illo minus</i> nemo nobis
+            possimus ea!</p>
+        <p>Lorem ipsum dolor sit amet <i> consectetur adipisicing elit. Sint molestiae eius sunt asperiores, itaque
+                beatae dignissimos quod</i> hic dolore, tempora at, ratione expedita fuga ducimus tempore consequatur
+            non dolores eaque!</p>
+    </div>
+    <form action="">
+        <label for="">Nome</label>
+        <input type="text"></form>
+        <br><br>
+        <label for="">Password</label>
+        <input type="password">
+        <br><br>
+        <label for="">Confirma password</label>
+        <input type="password">
+        <br><br>
+        <input type="submit">
+</body>
+
+</html>

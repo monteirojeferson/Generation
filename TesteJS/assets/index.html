@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container">
+        <!-- <nav class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html" class="navbar-link">Introdução ao Javascript</a></li>
+              <li><a href="logica-simples.html" class="navbar-link">Lógica simples com JS</a></li>
+              <li><a href="logica-complexa.html" class="navbar-link">Lógica complexa com JS</a></li>
+            </ul>
+          </nav> -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Introdução ao Javascript <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="logica-simples.html">Lógica simples com JS</a>
+               
+                <a class="nav-item nav-link" href="logica-complexa.html">Lógica complexa com JS</a>
+               </div>
+            </div>
+          </nav>
+
+          <!-- JUMBOTRON -->
+          <div class="jumbotron">
+            <h1 class="display-4">JAVASCRIPT</h1>
+            <p class="lead">Linguagem de programação de front end que define comportamentos para os elementos da estrutura das páginas web. Pode-se criar e manipular os elementos, alterando seus atributos ou seu conteúdo.</p>
+            <hr class="my-4">
+        
+            <a class="btn btn-secondary btn-lg" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" role="button" target="_blank">Veja mais no MDN</a>
+          </div>
+          <section class="container-fluid">
+            <h4 id="titulo">Conhecendo o básico da linguagem</h4>
+            <p>
+                <button class="btn btn-secondary" onClick="alert('Olá!')">ALERT</button>
+                <button class="btn btn-secondary" onClick="confirm('E aí, tudo bem?')">CONFIRM</button>
+                <button class="btn btn-secondary" onClick="prompt('Digite algo')">PROMPT</button>
+                
+              </p>
+              <p>Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais, sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás. O que é algo muito importante!</p>
+              
+              <script>
+
+                	//comentário js
+			document.write('Este texto foi inserido através do javascript.');
+			
+			//criar variável para guardar o texto de um elemento:
+			var titulo = document.getElementById('titulo').textContent;
+			console.log('O texto que está no elemento selecionado pelo id é: '+titulo);
+              </script>
+
+<p>
+    Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais, sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás. O que é algo muito importante!
+
+</p>
+<p>A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese de até criar um ministério. É na área de... Na área... Eu diria assim, como uma espécie de analogia com o que acontece na área agrícola.</p>
+
+
+<hr>
+<p id=troca>Texto trocadp pelo script</p>
+<small class="small">Clique no botão para trocar o nome:</small>
+<button class="btn btn-info"  onClick="atualizaNome()"  value=""  id="nomeInicial">Olá, como vai?</button>
+    </p>
+<hr>
+<p><small>Clique para criar parágrafos: </small>
+      <button class="btn btn-info" id="adicionar" onclick="adicionar()">Adicionar</button>
+      
+    </p>
+    <div class="container" id="caixa">
+      <p>Os novos parágrafos virão aqui:</p>
+    </div>
+
+
+
+          </section>
+
+    </main>
+
+
+
+<!-- 
+    <footer>
+      <h4>Senac Lapa Tito - 2020</h4>
+    </footer> -->
+
+
+
+    <script src="../assets/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>
