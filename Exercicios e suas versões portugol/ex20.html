@@ -1,0 +1,45 @@
+<script>
+    /*imprimir o vetor na ordem inversa ao que foram informados
+    ex 50,1,0,55,10
+    ...10,55,0,1,50*/
+ var numeros=[5];
+ for (var i = 0; i < 5; i++) {
+     numeros[i]=parseInt(prompt("Digite  o número: "));
+     document.write(numeros[i]);
+     console.log(numeros[i]);
+
+    
+     
+     
+ }
+
+ for (var i = 4; i >=0; i--) {
+    document.write("Posição contrária: " + numeros[i]);
+     console.log(numeros[i])
+
+     
+ }
+   
+ /*Outra maneira
+  var numeros=[]
+  var i=0;
+  while (i<=4){
+
+    numeros[i]=prompt("Digite o numero ")
+    document.write(numeros[i])
+    i++
+
+
+  }
+ 
+ i=4;
+ document.write("--------")
+ while(i>=0){
+
+    document.write(numeros[i])
+    i--
+
+ }
+ */
+
+</script>

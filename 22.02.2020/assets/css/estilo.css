@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Marvel', sans-serif;
+    color:#ffff;
+    background-color: #2ba8d9;
+    
+}
+
+main{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Estilo do topo e menu */
+header{
+    background-color: #2ba8d9;
+    height: 180px;
+    padding: 0.7em;
+}
+
+header > img{
+    float:left;
+    margin: 15px;
+}
+
+header > nav{
+    width: 250px;
+    float: right;
+    overflow: hidden;
+}
+
+header > nav > ul{
+    list-style: none;
+}
+
+header > nav > ul > li{
+    padding-right: 5px;
+}
+
+header > nav > ul > li > a:link{
+    display: block;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    height: 40px;
+    font-weight: bold;
+    line-height: 1.4em;
+    background-color: #ff675a;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 0 #707070
+}
+
+header > nav > ul > li > a:visited{
+    color: #ffff;
+}
+
+header > nav > ul > li > a:hover{
+    color: #707070;
+}
+
+/* Estilo dos títulos das seções! */
+h1{
+    font-size: 3em;
+    margin: 0 20px 25px 20px;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Seção sobre */
+
+.sobre{
+    background-color: #ff675a;
+    padding: 1em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sobre > img{
+    float: left;
+    margin-right: 20px;
+    
+}
+
+/* Seção trabalhos */
+.trabalhos{
+    background-color: #fac17e;
+    padding: 1em;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+
+.trabalhos > article{
+    float: left;
+    width:30.2%;
+    margin: 0.9em;
+    height: 500px;
+    box-shadow: 3px 2px 2px 0 #707070;
+    text-align: justify;
+    padding: 1em;
+}
+
+.trabalhos > article > img{
+    width:100%;
+    margin-top: 30px;
+    /* padding: 1em; */
+ } 
+
+.sites{
+    background-color: #2ba8b9;
+    /* padding: 1em; */
+}
+
+.sistemas{
+    background-color: #ff675a;
+    /* padding: 1em; */
+}
+
+.projetos{
+    background-color: #63bf9e;
+    /* padding: 1em; */
+}
+
+/* Seção contato */
+.contatos{
+    width: 40%;
+    padding: 30px;
+    float: left;
+    text-align: center;
+}
+
+.contatos > p{
+    font-size: 30px;
+}
+
+iframe{
+    width: 55%;
+    height:300px;
+    float: rigth;
+    margin-right: 20px;
+}
+
+/* Rodapé */
+footer{
+    float: left;
+    width: 100%;
+}
+
+footer > img{
+    width: 15%;
+    margin: 5% 40%;
+}
+
+/* Início do layout para dispositivos móveis */
+
+@media screen and (max-width: 950px){
+    .trabalho > article{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 922px){
+    .sobre > h1{
+        text-align: center;
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 768px){
+        .sobre > img{
+            margin-left: 45px;
+        }
+
+        .sobre > p{
+            font-size: 1.2em;
+        }
+
+        .trabalhos > h1{
+            text-align: center;
+        }
+
+        .trabalhos > article{
+            width: 28%;
+            font-size: 1.2em;
+        }
+
+        .contatos{
+            float: none;
+            margin-left: 220px;
+        }
+
+        .contatos > p{
+            font-size: 1.7em;
+        }
+
+        iframe{
+            float: none;
+            margin-left: 165px;
+        }
+
+}
+
+@media screen and (max-width: 425px){
+    header{
+        height: 315px;
+    }
+    
+    header > img{
+        float: none;
+        margin-left: 110px;
+    }
+    header > nav{
+        float: none;
+        width: 100%;
+    }
+
+    .sobre > img{
+        margin: 0px;
+        width: 100%;
+        
+    }
+
+    .sobre > p{
+        font-size: 1.4em;
+        text-align: justify;
+    }
+
+    .trabalhos > h1{
+        text-align: center;
+    }
+
+    .trabalhos > articles{
+        float: left;
+        width: 100%;
+        margin: 0.9 em 0;
+
+    }
+
+    .trabalhos > article {
+        float: none;
+        width: 90%;
+    }
+
+    .contatos{
+        margin-left: 35px;
+    }
+
+    .contatos  > h1{
+        width: 240px;
+    }
+
+    .contatos > p{
+        width: 240px;
+    }
+
+    iframe {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 320){
+    .contatos > p{
+        text-align: center;
+    }
+    
+}

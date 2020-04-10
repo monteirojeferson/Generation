@@ -1,0 +1,51 @@
+<script>
+/*funcao inicio()
+	{
+		real n1,n2,media
+
+		escreva("1º Nota: ")
+		leia(n1)
+		
+		escreva("2º Nota: ")
+		leia(n2)
+
+		media=((n1+n2)/2)
+
+		se (media>=7){
+			escreva("\nAprovado ")
+			}
+		se (media>5 e media<7){
+			escreva("\nExame ")
+			
+			}
+			senao{
+				escreva("\nReprovado ")
+				}*/
+
+var n1,n2,media;
+n1=prompt("1ºNota...");
+n1=parseInt(n1);
+n2=parseInt(prompt("2ºNota..."));
+
+
+media = (n1+n2)/2;
+
+if(media>=7){
+    console.log("aprovado");
+    alert("Aprovado");
+
+} else if (media>5 && media<7){
+    console.log("Exame");
+    alert("Exame");
+
+
+
+
+
+} else{
+
+    console.log("Reprovado");
+    alert("Reprovado");
+
+}
+</script>

@@ -1,0 +1,69 @@
+<script>
+/*inteiro nascimento,admissao,codigo
+	inteiro idade,tempoTrabalho,ano
+
+     escreva("Código de identificação : ")
+	leia(codigo)
+	
+	escreva("Ano do seu nascimento : ")
+	leia(nascimento)
+	
+	escreva("Ano de admissão : ")
+	leia(admissao)
+	
+	ano = 2020
+	idade= ano - nascimento
+	tempoTrabalho= ano - admissao
+
+	se (idade>=60 e tempoTrabalho>=20 ){
+		escreva("Requer Aposentadoria ")
+	}
+	senao {
+		se (idade>=65){
+		   escreva("Requer Aposentadoria ")
+			
+			}
+			senao {
+			se(tempoTrabalho>=30){
+				escreva("Requer Aposentadoria ")
+				}
+				senao{
+					
+				escreva("Não requer aposentadoria")	*/
+
+                var nascimento,admissao,codigo;
+                var idade,tempoTrabalho,ano;
+
+                codigo=prompt("Código de identificação: ");
+                nascimento=parseInt(prompt("Ano de nascimento: "));
+                admissao=parseInt(prompt("Ano de admissão: "));
+                ano=parseInt(2020);
+                idade= ano-nascimento;
+                tempoTrabalho= ano-admissao;
+
+                if(idade>=60 &&  tempoTrabalho>=20 ){
+                    console.log("Requer aposentadoria");
+                    alert("Requer aposentadoria");
+
+
+
+
+                } else if(idade>=65){
+                    console.log("Requer aposentadoria");
+                    alert("Requer aposentadoria");
+
+
+
+
+                } else if(tempoTrabalho>=30){
+
+
+                    console.log("Requer aposentadoria");
+                    alert("Requer aposentadoria");
+                } else{
+
+                    console.log("Não Requer aposentadoria");
+                    alert("Não Requer aposentadoria");
+
+                }
+</script>

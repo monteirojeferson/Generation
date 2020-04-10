@@ -1,0 +1,77 @@
+<script>
+
+
+/*
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		// entrada
+		cadeia nome , resultado
+		real n1,n2,n3,media
+
+		escreva("Nome do aluno: ")
+		leia(nome)
+
+		escreva("1º nota: ")
+		leia(n1)
+		escreva("2º nota: ")
+		leia(n2)
+		escreva("3º nota: ")
+		leia(n3)
+        // processamtno
+		media = (n1 +n2 + n3)/3
+		media=Matematica.arredondar(media, 1)
+
+		
+		
+   // saida
+
+		se (media>=7){
+		resultado=(" \nParabéns , você foi Aprovado ")
+		}
+		senao {
+		resultado=("\nVocê foi Reprovado ")
+		}
+		
+		escreva ("A media do " + nome + " é " + media + resultado)
+	}*/
+ var nome,resultado,n1,n2,n3,media;
+
+// entrada de dados
+
+// n1=parseInt(prompt("1°Nota: "));    pode fazer dessa maneira tambem
+ nome=prompt("Nome do aluno: ");
+ n1=prompt("1ºNota: ");
+ n1=parseFloat(n1)
+ console.log(n1);
+ n2=prompt("2ºNota: ");
+ n2=parseFloat(n2);
+ console.log(n2);
+ n3=prompt("3ºNota: ");
+ n3=parseFloat(n3);
+ console.log(n3);
+ media= (n1+n2+n3)/3;
+ media.toFixed(2);
+
+ console.log("A média é : " + media);
+
+ if (media>=7){
+
+
+resultado= "Aprovado"
+
+ }
+ else{
+
+resultado="Reprovado"
+
+ }
+ //saída
+
+ alert(nome + " Teve a média " + media + " e foi " + resultado);
+
+ 
+
+
+</script>

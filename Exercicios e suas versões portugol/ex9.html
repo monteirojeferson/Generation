@@ -1,0 +1,52 @@
+<script>
+/*cadeia nome
+		real salario , aumento
+
+		escreva("Nome do funcionario: ")
+		leia(nome)
+		escreva("Salário: ")
+		leia(salario)
+
+		se (salario>=5000){
+			escreva("Você ganhou um aumento de 5 % ")
+			aumento = salario*5/100
+			aumento = salario + aumento
+			escreva("\nAgora seu salário é : " + aumento)
+			
+			}
+		senao
+			{
+				escreva("Você ganhou um aumento de 10 % ")
+				aumento = salario*10/100
+				aumento = salario + aumento
+				escreva("\nAgora seu salário é : " + aumento)*/
+
+                var nome,salario,aumento
+
+                nome=prompt("Nome do funcionário: ");
+                console.log(nome);
+                salario=prompt("Salário: ");
+                console.log(salario)
+
+                if(salario>=5000){
+                    alert("Você ganhou um aumento de 5 %");
+                    salario=parseFloat(salario);
+                    aumento= salario*5/100;
+                    aumento=parseInt(aumento)+salario;
+                    alert("Seu salário agora é..." + aumento)
+
+
+                } else {
+
+                    alert("Você ganhou um aumento de 10 %");
+                    salario=parseFloat(salario);
+                    aumento= salario*10/100;
+                    aumento=parseInt(aumento)+salario;
+                    alert("Seu salário agora é..." + aumento)
+
+
+                }
+
+
+
+</script>

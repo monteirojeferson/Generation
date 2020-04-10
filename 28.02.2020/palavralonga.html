@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Escreva uma função JavaScript que aceite uma string como parâmetro e encontre a mais longa
+palavra dentro da string. -->
+    <script>
+        
+        var palavra=prompt("Digite algo: ");
+        var resultado="";
+        var vetor=palavra.split(" ");
+        maior=vetor[0];
+      
+       
+       
+        for (var i = 0; i < vetor.length; i++) {
+
+            vetor[i]=vetor[i].replace(vetor[i].slice(0,1),vetor[i].slice(0,1).toUpperCase())
+            resultado=resultado + " " + vetor[i]
+                  
+            
+            if(maior.length<vetor[i].length){
+              maior=vetor[i]
+           
+                } 
+
+            }
+            
+            // document.write(resultado)
+          
+            document.write(resultado +"<br>"+"A maior é :" + maior)
+            
+            
+        
+    </script>
+    
+</body>
+</html>

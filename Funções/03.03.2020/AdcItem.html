@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol id="grupo">
+        <h3>Lista de compras</h3>
+      
+    </ol>
+    <button id="adicionar" onclick="adicionar()">Adicionar</button>
+    <button id="remover" onclick="remover()">Remover</button>
+
+    <script>
+        function adicionar() {
+            var ol = document.getElementById("grupo");
+            var li = document.createElement("li"); // criando novo elemento
+            var texto = prompt(" ")
+            li.className = "item";
+
+            li.appendChild(document.createTextNode(texto));
+            ol.appendChild(li);
+
+        } function remover() {
+            var ol = document.getElementById("grupo");
+            ol.innerHTML = "Lista removida";
+            ol.length = 0;
+
+        }
+    </script>
+</body>
+
+</html>

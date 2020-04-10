@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try {
+            function notaFinal(n1,n2,n3,n4,n5){
+
+                var media4=(n1+n2+n3+n4)/4;
+              
+                
+                var media5=((n1+n2+n3+n4)/4) +n5/2;
+                //Array de argumentos: Retornando o vetor com os resultados
+
+                var notaFinal=[media4,media5]
+                return notaFinal;
+            }
+            var n1=parseInt(prompt("Nota do 1º Bimestre"))
+            var n2=parseInt(prompt("Nota do 2º Bimestre"))
+            var n3=parseInt(prompt("Nota do 3º Bimestre"))
+            var n4=parseInt(prompt("Nota do 4º Bimestre"))
+            var n5=parseInt(prompt("Nota da Recuperação"))
+            var media4=notaFinal(n1,n2,n3,n4)[0];
+            var media5=notaFinal(n1,n2,n3,n4,n5)[1];
+            alert("Media com 4 notas fica " + media4);
+            alert("Media com 5 notas fica  " + media5);
+            
+        } catch (erro) {
+            alert("Erro, contate o adm do site " + erro)
+            
+        }
+
+    </script>
+</body>
+
+</html>

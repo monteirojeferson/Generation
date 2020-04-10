@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Mude o código acima para retornar o menor entre 3 números passados como parâmetros;
+
+        // Mude a chamada de função pra aceitar 3 números;
+
+        function menorValor(a, b,c) {
+
+            if (a < b && a<c)  {
+                return a;
+            }
+            if (b < a && b<c)  {
+                return b;
+            }
+            else{
+                return c;
+
+        }
+    }
+        a=parseInt(prompt("Digite o numero"))
+        b=parseInt(prompt("Digite o numero"))
+        c=parseInt(prompt("Digite o numero"))
+
+        var menor = menorValor(a,b,c);
+        alert(menor)
+
+    </script>
+
+</body>
+
+</html>

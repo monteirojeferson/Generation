@@ -1,0 +1,48 @@
+/*comentário */
+/* 
+sintaxe:
+elemento {propriedade:valor
+          propriedade:valor}
+     */
+/* SELETOR DE ELEMENTO */
+     h1 {
+         color: slateblue;
+         text-align: center;
+         font-size: 40px;
+         font-family: 'Sriracha', cursive;
+
+         
+        
+     } 
+     /* SELETOR DE ID */
+     #paragrafo1{
+            color: thistle;
+            text-align: left;
+            font-family: fantasy;
+     }
+     #paragrafo2 {
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 30px;
+            background-color: yellowgreen;
+
+     }
+    #paragrafo3{
+            color: yellowgreen;
+            font-family: monospace;
+            background-color: yellow;
+            
+
+
+
+    }
+    .grupo1{
+        font-size: 50px;
+
+
+
+    }
+    .grupo2{
+        color: magenta;
+
+    }

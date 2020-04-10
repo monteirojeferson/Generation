@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Escreva uma função JavaScript que aceite uma string como parâmetro e converta a
+primeira letra de cada palavra da string em maiúsculas. -->
+    <script>
+
+        var texto=prompt("Digite algo ");
+        var resultado="";
+        var vetor= texto.split(" "); //Split transforma string em vetor
+        alert("Tamanho do vetor: " + vetor.length)
+       
+
+        for (var i = 0; i < vetor.length; i++) {
+            vetor[i]=vetor[i].replace(vetor[i].slice(0,1),vetor[i].slice(0,1).toUpperCase())
+            resultado=resultado + " " + vetor[i]
+          
+            
+        }
+        document.write(resultado)
+    
+    </script>
+    
+</body>
+</html>
