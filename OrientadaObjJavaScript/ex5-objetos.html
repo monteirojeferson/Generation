@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+  
+<script>
+    try{
+  // METODO CONSTRUTOR
+  function Carro(_marca,_ano,_velMax,_velAtual){
+      //ATRIBUTOS
+      this.marca=_marca;
+      this.ano=_ano;
+      this.velMax=_velMax;
+      this.velAtual=(0 || _velAtual);
+  }
+  
+//Método de acelerae
+  Carro.prototype.acelerador = function(){
+      if (this.velAtual < this.velMax){
+          this.velAtual ++;
+          alert("Você aumentou 1km, veloidade atual " + this.velAtual)
+      }
+      else{
+          this.velAtual="";
+          alert("Você já esta na velocidade máxima")
+      }
+  }
+  
+  Carro.prototype.desacelerador = function(){
+
+      if(this.velAtual<1){
+      
+      alert("Você está parado");
+      } else{
+          this.velAtual--;
+          alert("Você desacelerou " + this.velAtual)
+      }
+      
+  }
+
+  // utilizando a estrutura acima
+  // instanciaer = cria uma cópia do objeto
+
+carro1 = new Carro("Gol","2015",12,"")
+carro1.acelerador();
+carro1.acelerador();
+carro1.acelerador();
+carro1.acelerador();
+carro1.acelerador();
+carro1.acelerador();
+carro1.desacelerador();
+carro1.desacelerador();
+carro1.desacelerador();
+carro1.desacelerador();
+// alert(carro1.marca,carro1.velAtual)
+    }// fechamento do try
+
+    catch(erro){
+        alert("Erro " + erro)
+    }
+</script>
+    
+</body>
+</html>

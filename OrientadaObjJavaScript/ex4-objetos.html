@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalho com objetos</title>
+</head>
+
+<body>
+    <script>
+    
+    
+        // criando nosso modelo
+        // cria o método construtor = constrói o modelo
+        // MODELO= conjunto de atributos(CARACTERÍSTICAS) e metodos(AÇÕES)
+        // todo MODELO começa com letra MAIUSCULA
+
+        //INICIO DO METODO CONSTRUTOR    
+        function MinhaCaneta(_cor, _tipo, _tamanho, _temTinta, _material, _espessuraPonta, _tampado) {
+            //atributos....
+            this.cor = _cor;
+            this.tipo = _tipo;
+            this.tamanho = _tamanho;
+            this.temTinta = (_temTinta || "s");
+            this.material = _material;
+            this.espessuraPonta = _espessuraPonta;
+            this.tampado = (_tampado || "sim");
+            //fim dos atributos---------
+
+        }
+        // FIM DO MÉTODO CONTRUTOR
+
+
+        //INICIO DO MÉTODO ABRIR
+        MinhaCaneta.prototype.abrir = function () {
+            if (this.tampado == "sim") {
+                this.tampado = "não"
+                alert("Caneta destampada")
+
+            } else {
+
+                alert("Caneta já estava aberta ")
+            }
+
+        } // FIM DO MÉTODO ABRIR
+
+        //INICIO DO MÉTODO FECHAR
+
+        //FIM DO MÉTODO FECHAR
+
+        // instanciar  = cópia do objeto
+        caneta1 = new MinhaCaneta("azul", "canetão", "10cm", "", "plástico", "2 mm", "",)
+        caneta2 = new MinhaCaneta("preto", "esferográfica", "15 cm", "", "plástico", "0,5 mm", "")
+
+
+        //brincando.....
+        //comparar as cores dos 2 objetos
+
+        if (caneta1.cor == caneta2.cor) {
+            // alert("As cores são iguais")
+
+        }
+        else {
+         //   alert("As cores são diferentes")
+        }
+
+        //imprimindo a cor da caneta
+       // alert("Cor: " + caneta1.cor + "\nTem tinta: " + caneta1.temTinta)
+        //////////////////////////////////////////////////////////////////////
+
+
+        // utilizando o metodo abrir() com o objeto caneta2
+        caneta2.abrir();
+        
+    </script>
+
+</body>
+
+</html>
