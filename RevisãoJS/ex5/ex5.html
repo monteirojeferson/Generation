@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let tempoGasto=parseFloat(prompt("Quantas horas durou a viagem ?"));
+        let velocidade=parseFloat(prompt("Velocidade da viagem ?"));
+        let distancia = tempoGasto*velocidade;
+        let litrosUsados=Math.round(distancia/12);
+        document.write("Tempo gastp " + tempoGasto + "<br>"+ "Velocidade média " + velocidade + "<br>" + "Distância " + distancia + "<br>" + "Combustível usado " + litrosUsados );
+    </script>
+    
+</body>
+</html>

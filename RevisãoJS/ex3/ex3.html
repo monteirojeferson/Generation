@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Ht =parseFloat(prompt("Horas trabalhadas"));
+        let Vh =parseFloat(prompt("Valor das Horas trabalhadas"));
+        let Pd =parseFloat(prompt("Percentual de desconto"));
+
+        //Salário brutp
+
+        let SalarioBruto=Ht*Vh;
+
+        //Calculo do total de desconto
+
+        let TotalDesconto=(Pd/100)*SalarioBruto;
+
+        //salario liquido
+
+        let SalarioLiquido=SalarioBruto-TotalDesconto;
+
+        document.write("Horas trabalhadas " + Ht+ "<br>"+"Salário bruto " + SalarioBruto+ "<br>"+"Descontos " + TotalDesconto +"<br>"+ "Salário líquido " + SalarioLiquido)
+    </script>
+    
+</body>
+</html>
